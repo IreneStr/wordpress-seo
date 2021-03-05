@@ -220,7 +220,7 @@ class Indexing_Notification_Integration implements Integration_Interface {
 		$presenter = $this->get_presenter( $reason );
 
 		return new Yoast_Notification(
-			$presenter,
+			$presenter->present(),
 			[
 				'type'         => Yoast_Notification::WARNING,
 				'id'           => self::NOTIFICATION_ID,
