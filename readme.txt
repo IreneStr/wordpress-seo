@@ -234,6 +234,9 @@ Your question has most likely been answered on our help center: [yoast.com/help/
 
 == Changelog ==
 
+= 16.1 =
+* This is a test beta.
+
 = 16.0 =
 Release Date: March 16th, 2021
 
@@ -242,41 +245,6 @@ Bugfixes:
 * Fixes a bug where invalid breadcrumbs would show PHP warnings.
 * Fixes a bug where a fatal error would be thrown when a post ancestor was not an indexable.
 * Fixes a bug where a fatal error would be thrown when both Yoast SEO and Polylang for WooCommerce were installed, and the site contained WooCommerce variable products. Props to [manooweb](https://github.com/manooweb).
-
-= 15.9.1 =
-Release Date: March 4th, 2021
-
-Welcome to Yoast SEO 15.9.1! This release contains an improvement for the FAQ block schema output, and makes sure the plugin is compatible with WordPress Core's auto-update feature and `robots` changes. Read more about those changes in [our post about Yoast SEO 15.9.1 and WordPress 5.7](https://yoa.st/release-15-9-1)!
-
-Enhancements:
-
-* Removes `mainEntityOfPage` from our FAQ Schema block output and moves it to `mainEntity` on the `WebPage` output, fixing a Google parse issue with those FAQ blocks.
-* Performance enhancements in the post indexable builder by skipping link creation on drafts.
-
-Bugfixes:
-
-* Fixes a bug where indexable creation caused compatibility problems with code that would hook in to new post creation. 
-
-Other:
-
-* Adds a notification to prompt users to enable auto-updates for Yoast SEO, in case they also have auto-updates for WordPress Core enabled.
-* Ensures compatibility with WordPress Core's `robots` meta tag by hooking into the `wp_robots` filter and using our settings there.
-* Enables/disables auto-updates for the Yoast Woocommerce, News, Video and Local SEO plugins when auto-updates for Yoast SEO are enabled/disabled.
-
-= 15.9 =
-Release Date: February 23rd, 2021
-
-Yoast SEO 15.9 is out! This release comes with performance improvements and general enhancements. Happy updating and thanks for using Yoast SEO! Read more about what’s new in Yoast SEO 15.9 in [our release post](https://yoa.st/release-15-9)!
-
-Enhancements:
-
- * Adds a preview of the chosen image for the organization and person image, social images, Facebook front page image and Facebook default image.
- * Improves interoperability and consistency in database queries.
- * Improves the performance by preventing database queries for the homepage indexable.
-
-Bugfixes:
-
-* Fixes a bug where the disabled style of the switch toggles didn't look right.
 
 = Earlier versions =
 For the changelog of earlier versions, please refer to [the changelog on yoast.com](https://yoa.st/yoast-seo-changelog).
